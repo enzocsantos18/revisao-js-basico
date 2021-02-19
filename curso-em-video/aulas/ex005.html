@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhando com a DOM</title>
+</head>
+<style>
+  *{
+    font-family: sans-serif;
+  }
+  body{
+    background-color: rgb(173, 201, 252);
+  }
+</style>
+<body>
+  <h1>Iniciando estudo dom</h1>
+  <p>Aqui vai o resultado</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab suscipit deleniti inventore consequuntur maxime. Rerum sint temporibus esse consequuntur minus quidem veniam sunt, consequatur quae voluptas facere officiis odio quis!</p>
+  <div>Clique em mim!</div>
+</body>
+
+<script>
+  //Árvore DOM -> Window -> Location, Document -> Head,  Body, History
+  document.write(document.location)
+
+  /* 
+    Por marca getElementsByTagName()
+    Por id getElementsById()
+    Por nome getElementsByName
+    Por Classe getElementsByClassName
+    Por Seletor querySelector ou querySelectorAll
+  */
+ 
+  var p1 = window.document.getElementsByTagName('p')[0];
+
+  p1.style.color = 'green'
+
+  //innerText e innerHTML
+
+</script>
+</html>
