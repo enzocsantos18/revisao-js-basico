@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhando com a DOM</title>
+</head>
+<style>
+  *{
+    font-family: sans-serif;
+  }
+  body{
+    background-color: rgb(173, 201, 252);
+  }
+
+  #box{
+    background-color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+  }
+</style>
+<body>
+ <h1>Somando Valores:</h1>
+ <label for="txtn1">Número 1:</label>
+ <input type="number" name="txtn1" id="txtn1">
+ <label for="txtn2">Número 2:</label>
+ <input type="number" name="txtn2" id="txtn2">
+ <input type="button" value="Somar" onclick="somar()">
+  <div id="res">Área de Resultado</div>
+  
+</body>
+
+<script>
+  function somar(){
+    var tn1 = document.getElementById("txtn1");
+    var tn2 = document.querySelector("input#txtn2");
+    var res = document.querySelector("div#res");
+
+
+    var n1 = Number(tn1.value);
+    var n2 = Number(tn2.value);
+
+    var soma = n1 + n2;
+
+    res.innerHTML = `A soma é <strong>${soma}</strong>`
+
+  }
+ 
+</script>
+</html>
