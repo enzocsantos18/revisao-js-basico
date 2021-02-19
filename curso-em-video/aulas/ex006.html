@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhando com a DOM</title>
+</head>
+<style>
+  *{
+    font-family: sans-serif;
+  }
+  body{
+    background-color: rgb(173, 201, 252);
+  }
+
+  #box{
+    background-color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+  }
+</style>
+<body>
+  <div id="box">
+    Interaja...
+  </div>
+  
+</body>
+
+<script>
+  const box = document.getElementById('box');
+
+
+  box.addEventListener('click', clicar);
+  box.addEventListener('mouseenter', entrar);
+  box.addEventListener('mouseout', sair);
+
+
+  function clicar(){
+    box.innerText = "Clicou"
+  }
+
+  function entrar(){
+    box.innerText = "Entrou na div"
+  }
+
+  function sair(){
+    box.innerText = "Saiu da div"
+  }
+  //mouseenter
+  //mousemove
+  //mousedown
+  //mouseup
+  //click
+  //mouseout
+
+  //https://developer.mozilla.org/pt-BR/docs/Web/Events
+ 
+</script>
+</html>
